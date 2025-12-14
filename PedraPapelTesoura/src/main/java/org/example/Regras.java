@@ -36,7 +36,9 @@ public class Regras {
         ) {
             return "JOGADOR GANHOU";
         } else {
-            if(!tipo.equals("PEDRA") || !tipo.equals("TESOURA") || !tipo.equals("PAPEL")){
+            if (tipo.equals("SAIR")){
+                return "OBRIGADO POR JOGAR!";
+            } else if(!tipo.equals("PEDRA") || !tipo.equals("TESOURA") || !tipo.equals("PAPEL")){
                 return "JOGADA INVÁLIDA!";
             }
             return "COMPUTADOR GANHOU";
